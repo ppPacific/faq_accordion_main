@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.attribution {font-size: 12px}
+.attribution a { color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 375px) {
+    html{
+        background: hsl(275, 100%, 97%) url("./assets/images/background-pattern-desktop.svg") no-repeat top;
+    }
+    .container{
+        width: 70%;
+        max-width: 500px;
+        padding: 0.4em 2.6em 0.8em 2.6em;
+
+    }
+    .faq_title h1{
+        font-size: xxx-large;
+    }
+}
+@media screen and (max-width: 375px) {
+    html{
+        background: hsl(275, 100%, 97%) url("./assets/images/background-pattern-mobile.svg") no-repeat top;
+    }
+    .container{
+        width: 80%;
+        padding: 0.4em 1.6em 0.8em 1.6em;
+    }
+    .faq_title h1{
+        font-size: xx-large;
+    }
+}
+
+html,body{
+    height: 100vh;
+    font-family: "Work Sans", sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+
+}
+
+h4:hover {
+    color :#AD28EB;
+    cursor: pointer;
+}
+
+.container{
+    top: 300px;
+    background: white;
+    border-radius:1.4em;
+}
+.faq_title{
+    display: flex;
+    flex-direction: row;
+}
+.faq_title h1{
+    margin-left: 0.6em;
+    font-weight: 700;
+    font-style: normal;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.box:not(:last-child){
+    border-bottom: 1px solid #dcdcdc;
+}
+.box_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+.box_desc{
+    color: hsl(292, 16%, 49%);
+    font-weight: 600;
+    display: none;
+}
+.minus_img{
+    display: none;
+}
